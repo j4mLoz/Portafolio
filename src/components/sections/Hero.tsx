@@ -49,7 +49,7 @@ export default function Hero() {
                 <div className="flex items-center justify-center w-90">
                   <img
                     src="../src/assets/PictureJuan.png"
-                    alt="Imagen del Hero"
+                    alt="Imagen_del_Hero"
                   />
                 </div>
               </div>
