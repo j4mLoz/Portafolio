@@ -1,6 +1,7 @@
 import Container from "../ui/Container";
 import Button from "../ui/Button";
 import { motion } from "framer-motion";
+import heroImage from "../../assets/PictureJuan.png";
 
 export default function Hero() {
   return (
@@ -47,10 +48,7 @@ export default function Hero() {
             >
               <div className="flex justify-center md:justify-end">
                 <div className="flex items-center justify-center w-90">
-                  <img
-                    src="../src/assets/PictureJuan.png"
-                    alt="Imagen_del_Hero"
-                  />
+                  <img src={heroImage} alt="Imagen_del_Hero" />
                 </div>
               </div>
             </motion.div>
