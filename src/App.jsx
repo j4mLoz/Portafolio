@@ -10,8 +10,11 @@ function App() {
   return (
     <MainLayout>
       <Hero />
+      <SectionDivider />
       <About />
+      <SectionDivider />
       <Skills />
+      <SectionDivider />
       <Projects />
       <Footer />
     </MainLayout>

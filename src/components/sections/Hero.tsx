@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center py-28 bg-background overflow-hidden">
+    <section className="relative min-h-screen flex items-center py-32 bg-background overflow-hidden">
       {/* Glow ambiental */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[700px] h-[700px] rounded-full bg-primary/10 blur-3xl" />
@@ -36,7 +36,7 @@ export default function Hero() {
           {/* Imagen */}
           <div className="flex justify-center md:justify-end">
             <motion.div
-              className="relative"
+              className="relative flex items-end justify-center w-48 md:w-64"
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{
@@ -45,39 +45,13 @@ export default function Hero() {
                 delay: 0.35,
               }}
             >
-              {/* 1. El Fondo con Color (El círculo/forma de atrás) */}
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-48 h-48 md:w-64 md:h-64 rounded-full bg-gradient-to-tr from-orange-400 via-pink-500 to-purple-600 z-0" />
-
-              {/* 2. El Contenedor de la Imagen */}
-              <div className="relative w-48 h-64 md:w-64 md:h-80 overflow-visible flex items-end justify-center">
-                <img
-                  src="../src/assets/JuanLozano.png"
-                  alt="Foto de Juan"
-                  className="
-          relative
-          z-20
-          h-full 
-          w-auto
-          object-contain
-          transition-transform
-          duration-300
-          hover:scale-105
-        "
-                  style={{
-                    // Este es el truco clave:
-                    maskImage: "linear-gradient(to top, black 80%, black 100%)",
-                    WebkitMaskImage:
-                      "linear-gradient(to top, black 80%, black 100%)",
-                  }}
-                />
-
-                {/* 3. El borde del círculo (opcional para dar profundidad) */}
-                <div className="absolute bottom-0 w-48 h-48 md:w-64 md:h-64 rounded-full border-4 border-white/20 z-10 pointer-events-none" />
-              </div>
-
-              {/* 4. La Firma (Jacob Jon) - Si la tienes como imagen aparte */}
-              <div className="absolute bottom-4 right-[-20px] z-30 transform rotate-[-5deg]">
-                {/* <img src="firma.png" className="w-24 md:w-32" /> */}
+              <div className="flex justify-center md:justify-end">
+                <div className="flex items-center justify-center w-90">
+                  <img
+                    src="../src/assets/PictureJuan.png"
+                    alt="Imagen del Hero"
+                  />
+                </div>
               </div>
             </motion.div>
           </div>

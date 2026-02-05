@@ -32,15 +32,15 @@ export default function Footer() {
             <ul className="mt-4 space-y-2">
               <li>
                 <a
-                  href="mailto:juan@email.com"
+                  href="mailto:juan.lozaa2812@gmail.com"
                   className="text-[color:var(--color-muted)] hover:text-white transition"
                 >
-                  juan@email.com
+                  juan.lozaa2812@gmail.com
                 </a>
               </li>
               <li>
                 <a
-                  href="https://github.com/tuusuario"
+                  href="https://github.com/j4mLoz"
                   target="_blank"
                   className="text-[color:var(--color-muted)] hover:text-white transition"
                 >
@@ -49,7 +49,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://linkedin.com/in/tuusuario"
+                  href="https://www.linkedin.com/in/juan-lozano-9b97a83a8/"
                   target="_blank"
                   className="text-[color:var(--color-muted)] hover:text-white transition"
                 >
