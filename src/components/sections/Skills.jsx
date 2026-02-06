@@ -36,23 +36,16 @@ export default function Skills() {
       <Container>
         {/* Header */}
         <div className="max-w-3xl mb-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            viewport={{ once: true }}
-          >
-            <p className="text-sm uppercase tracking-widest text-[color:var(--color-primary)]">
-              Skills
-            </p>
-            <h2 className="mt-4 text-3xl md:text-4xl font-bold">
-              Habilidades y enfoque de trabajo
-            </h2>
-            <p className="mt-6 text-[color:var(--color-muted)]">
-              Un resumen de las tecnologías y prácticas que utilizo para
-              construir interfaces sólidas, mantenibles y bien pensadas.
-            </p>
-          </motion.div>
+          <p className="text-sm uppercase tracking-widest text-[color:var(--color-primary)]">
+            Skills
+          </p>
+          <h2 className="mt-4 text-3xl md:text-4xl font-bold">
+            Habilidades y enfoque de trabajo
+          </h2>
+          <p className="mt-6 text-[color:var(--color-muted)]">
+            Un resumen de las tecnologías y prácticas que utilizo para construir
+            interfaces sólidas, mantenibles y bien pensadas.
+          </p>
         </div>
 
         {/* Grid */}
