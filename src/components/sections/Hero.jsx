@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import JuanLozano from "../../assets/JuanLozano.png";
 
 import Container from "../ui/Container";
 
@@ -50,7 +51,7 @@ export default function Hero() {
             className="flex justify-center md:justify-end"
           >
             <img
-              src="../src/assets/JuanLozano.png"
+              src={JuanLozano}
               alt="Foto de Juan"
               className="max-w-sm w-full drop-shadow-[0_30px_60px_rgba(0,0,0,0.35)]"
             />
