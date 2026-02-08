@@ -12,6 +12,7 @@ export default function Hero() {
     bg-[linear-gradient(90deg,#000000,#555555,#838383)]
     text-white
   "
+      id="home"
     >
       <div className="absolute inset-0 bg-black/20" />
       <Container>

@@ -36,9 +36,20 @@ export default function NavBar() {
       <Container>
         <nav className="flex items-center justify-between py-8 border-b border-white/40">
           {/* MARCA */}
-          <div className="text-lg font-medium text-[#e9da98] tracking-wider">
+          <a
+            href="#home"
+            className="
+    text-lg
+    font-medium
+    tracking-wider
+    text-[#e9da98]
+    cursor-pointer
+    hover:opacity-80
+    transition-opacity
+  "
+          >
             JL
-          </div>
+          </a>
 
           {/* LINKS */}
           <ul className="flex items-center gap-12 text-base">
