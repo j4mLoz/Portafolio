@@ -7,47 +7,65 @@ export default function About() {
       id="about"
       className="relative py-32 bg-[linear-gradient(90deg,#000000,#555555,#838383)] text-white"
     >
-      {/* Overlay sutil para continuidad visual */}
+      {/* Overlay atmosférico para continuidad visual */}
       <div className="absolute inset-0 bg-black/20 pointer-events-none" />
 
       <Container>
-        <div className="relative max-w-4xl mx-auto text-center space-y-12">
-          {/* Título */}
-          <motion.h2
+        <div className="relative max-w-4xl mx-auto">
+          {/* LABEL */}
+          <motion.p
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-semibold text-[#e9da98]"
+            className="text-sm uppercase tracking-widest text-[#e9da98]"
           >
             About Me
+          </motion.p>
+
+          {/* STATEMENT PRINCIPAL */}
+          <motion.h2
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              ease: [0.22, 1, 0.36, 1],
+              delay: 0.1,
+            }}
+            viewport={{ once: true }}
+            className="mt-6 text-2xl md:text-3xl font-medium leading-snug"
+          >
+            <strong className="font-semibold">
+              Soy frontend developer y disfruto construir interfaces tranquilas,
+              claras y bien pensadas.
+            </strong>
           </motion.h2>
 
-          {/* Frase principal */}
-          <motion.p
+          {/* TEXTO DE SOPORTE */}
+          <motion.div
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
+            transition={{
+              duration: 0.8,
+              ease: [0.22, 1, 0.36, 1],
+              delay: 0.2,
+            }}
             viewport={{ once: true }}
-            className="text-2xl md:text-3xl font-medium leading-snug"
+            className="mt-10 space-y-6 text-base md:text-lg text-white/80 leading-relaxed"
           >
-            Desarrollo interfaces con un enfoque claro en orden, coherencia y
-            trabajo en equipo.
-          </motion.p>
+            <p>
+              Disfruto trabajar en los detalles, en la coherencia visual y en
+              que cada decisión tenga sentido para quien usa el producto.
+            </p>
 
-          {/* Texto descriptivo */}
-          <motion.p
-            initial={{ opacity: 0, y: 12 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-            viewport={{ once: true }}
-            className="text-lg text-white/80 leading-relaxed max-w-3xl mx-auto"
-          >
-            Al construir una interfaz, me centro en que cada elemento tenga
-            sentido para el usuario final. Me importa que todo esté bien
-            estructurado y que la jerarquía visual sea clara, cuidando tanto la
-            experiencia como la coherencia del producto.
-          </motion.p>
+            <p>
+              Me siento cómodo colaborando en equipos donde{" "}
+              <strong className="text-white font-medium">
+                el orden, la comunicación y la calidad del producto
+              </strong>{" "}
+              importan tanto como el resultado final.
+            </p>
+          </motion.div>
         </div>
       </Container>
     </section>
