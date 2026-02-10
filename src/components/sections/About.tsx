@@ -7,12 +7,13 @@ export default function About() {
       id="about"
       className="relative py-32 bg-[linear-gradient(90deg,#000000,#555555,#838383)] text-white"
     >
-      {/* Overlay atmosférico para continuidad visual */}
+      {/* Overlay atmosférico */}
       <div className="absolute inset-0 bg-black/20 pointer-events-none" />
 
       <Container>
-        <div className="relative max-w-4xl mx-auto">
-          {/* LABEL */}
+        {/* Usamos el MISMO ancho que Skills */}
+        <div className="relative max-w-5xl mx-auto">
+          {/* Label */}
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -23,7 +24,7 @@ export default function About() {
             About Me
           </motion.p>
 
-          {/* STATEMENT PRINCIPAL */}
+          {/* Statement */}
           <motion.h2
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +34,7 @@ export default function About() {
               delay: 0.1,
             }}
             viewport={{ once: true }}
-            className="mt-6 text-2xl md:text-3xl font-medium leading-snug"
+            className="mt-6 max-w-3xl text-2xl md:text-3xl font-medium leading-snug"
           >
             <strong className="font-semibold">
               Soy frontend developer y disfruto construir interfaces tranquilas,
@@ -41,7 +42,7 @@ export default function About() {
             </strong>
           </motion.h2>
 
-          {/* TEXTO DE SOPORTE */}
+          {/* Texto */}
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +52,7 @@ export default function About() {
               delay: 0.2,
             }}
             viewport={{ once: true }}
-            className="mt-10 space-y-6 text-base md:text-lg text-white/80 leading-relaxed"
+            className="mt-10 max-w-3xl space-y-6 text-base md:text-lg text-white/80 leading-relaxed"
           >
             <p>
               Disfruto trabajar en los detalles, en la coherencia visual y en

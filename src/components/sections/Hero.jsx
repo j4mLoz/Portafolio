@@ -1,30 +1,28 @@
 import { motion } from "framer-motion";
 import JuanLozano from "../../assets/JuanLozano.png";
-
 import Container from "../ui/Container";
 
 export default function Hero() {
   return (
     <section
-      className="
-    min-h-screen
-    flex items-center
-    bg-[linear-gradient(90deg,#000000,#555555,#838383)]
-    text-white
-  "
       id="home"
+      className="
+        relative
+        pt-32        /* mobile: más aire */
+        md:pt-44     /* desktop: impacto */
+        pb-24
+        bg-[linear-gradient(90deg,#000000,#555555,#838383)]
+      "
     >
       <div className="absolute inset-0 bg-black/20" />
+
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
           {/* TEXTO */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: [0.22, 1, 0.36, 1],
-            }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
             className="flex flex-col justify-center space-y-6"
           >
             <p className="text-sm uppercase tracking-widest text-[#e9da98]">
@@ -40,6 +38,7 @@ export default function Hero() {
               donde cada decisión tiene un propósito.
             </p>
           </motion.div>
+
           {/* IMAGEN */}
           <motion.div
             initial={{ opacity: 0, scale: 0.96 }}
