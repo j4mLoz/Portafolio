@@ -1,7 +1,11 @@
 import Container from "../ui/Container";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import ContactModal from "../ui/ContactModal";
 
 export default function Footer() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <footer className="relative py-24 bg-[linear-gradient(90deg,#000000,#555555,#838383)] text-white">
       {/* Overlay */}
@@ -40,24 +44,24 @@ export default function Footer() {
               viewport={{ once: true }}
               className="flex-shrink-0"
             >
-              <a
-                href="mailto:juan.lozaa2812@gmail.com"
+              <button
+                onClick={() => setIsOpen(true)}
                 className="
-                  inline-block
-                  rounded-full
-                  bg-[#e9da98]
-                  px-8
-                  py-3
-                  text-sm
-                  font-medium
-                  text-black
-                  cursor-pointer
-                  transition-colors
-                  hover:bg-[#f3e6b2]
-                "
+    inline-block
+    rounded-full
+    bg-[#e9da98]
+    px-8
+    py-3
+    text-sm
+    font-medium
+    text-black
+    cursor-pointer
+    transition-colors
+    hover:bg-[#f3e6b2]
+  "
               >
                 Hablemos
-              </a>
+              </button>
             </motion.div>
           </div>
 
@@ -103,6 +107,7 @@ export default function Footer() {
           </div>
         </div>
       </Container>
+      <ContactModal isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </footer>
   );
 }
