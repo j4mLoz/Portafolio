@@ -28,8 +28,13 @@ body {
    UX DETAILS
    ========================= */
 ::selection {
-  background-color: var(--color-primary);
-  color: var(--color-background);
+  background-color: rgba(233, 218, 152, 0.85);
+  color: #000000;
+}
+
+::-moz-selection {
+  background-color: #e9da98;
+  color: #000000;
 }
 
 button,
